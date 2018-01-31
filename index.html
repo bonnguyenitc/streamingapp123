@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.14/peer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="div-chat">
+        <p>Người online</p>
+        <ul id="ulUser">
+        </ul>
+        <h3 id="my-peer">My Id: </h3>
+        <video id="localStream" width="300" controls></video>
+        <br /><br />
+        <video id="remoteStream" width="300" controls></video>
+        <br /><br />
+    
+        <input type="text" id="remoteID" placeholder="Remote ID">
+        <button id="btnCall">Call</button>
+    </div>
+
+    <div id="div-dangky">
+        <input type="text" id="txtUsername" placeholder="Nhập tên vô đây">
+        <button id="btnSignUp">Sign Up</button>
+    </div>
+
+    <script src="socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
